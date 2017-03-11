@@ -1,11 +1,20 @@
+/*
+Reijns-IP Website
+
+Author: Samantha Mannino
+11 March 2017
+*/
+
+
+/* Sections */
 .headerSection, .outlineSection, .section {
 	margin-top: 5vh;
     margin-bottom: 5vh;
-	margin-left: 5vw;
+	margin-left: 115px;
 	margin-right: 5vw;
 
 	padding-right: 5vw;
-    padding-left: 10vw;
+    padding-left: 5vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
    	/*min-width: 80vh;*/
@@ -50,6 +59,8 @@
 }
 
 
+/* Static Things */
+
 .h1 {
     font-size: 2.5em;
 }
@@ -58,62 +69,6 @@
     font-size: 2em;
 }
 
-.jo-nav {
-  position: fixed;
-  top: 32px;
-  left: 16px;
-  bottom: 32px;
-  width: 72px;
-  z-index: 999;
-  border-right: 0px solid #666;
-  background-color: #000;
-  margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    display: block;
-}
-
-
-#jo-nav .current a {
-			background: #fff;
-			color: #000;
-		}
-		
-		.jo-nav a {
-    background-image: url(../resources/images/logo-favicon.png);
-    background-size: 105px 105px;
-}
-		
-		.jo-nav a span {
-    //display: none;
-    position: absolute;
-    top: 24px;
-    left: 68px;
-}
-
-.jo-nav a:hover {
-    //background-position: 19px 20px !important;
-    background-color: #eee;
-    width: 120px;
-}
-
-.jo-nav a {
-    position: relative;
-    display: block;
-    width: 105px;
-    height: 105px;
-    background-position: 19px 20px;
-    background-repeat: no-repeat;
-    -moz-transition: width 0.2s;
-    -o-transition: width 0.2s;
-    -webkit-transition: width 0.2s;
-    transition: width 0.2s;
-    overflow: hidden;
-}
-		
 body:before {
     top:0;
 }
@@ -131,3 +86,63 @@ body:before, body:after {
 body:after {
     bottom: 0;
 }
+		
+/* AAMR Navigation */
+.aamr-nav {
+    position: fixed;
+    top: 32px;
+    left: 16px;
+    bottom: 32px;
+    width: 72px;
+    z-index: 999;
+    border-right: 0px solid #666;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+    list-style-type: none;
+}
+
+
+#aamr-nav .current a {
+    background: #fff;
+    color: #000;
+}
+		
+.aamr-nav a {
+    background-size: 105px 105px;
+}
+		
+.aamr-nav a span {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 68px;
+}
+.aamr-nav a span:hover {
+    display: block;
+}
+
+.aamr-nav a:hover {
+    background-position: 19px 20px !important;
+    background-color: #eee;
+    width: 120px;
+}
+
+.aamr-nav a {
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 105px;
+    background-position: 19px 20px;
+    background-repeat: no-repeat;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+    overflow: hidden;
+}
+

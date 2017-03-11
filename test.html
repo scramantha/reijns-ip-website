@@ -8,6 +8,8 @@
 
   <script src="plugins/jquery-3.1.1.js"></script>
   <script src="plugins/jquery.nav.js"></script>
+  <!--This is my own fontawesome CDN code.-->
+  <script src="https://use.fontawesome.com/8e3ba72382.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -21,7 +23,7 @@
     $("#aamr_about").load("content/aamr_over-nl.html");
     $("#aamr_services").load("content/aamr_services-nl.html");
     $("#aamr_bio").load("content/aamr_bio-nl.html");
-
+    $("#aamr_contact").load("content/aamr_contact-nl.html");
     
     $("#aamr_title").fadeIn(200, function(){
       $(".section").fadeIn(200);
@@ -30,21 +32,30 @@
     
 });
   </script>
-
-  <style>
-
-  </style>
 </head>
 
 <body>
   <!--//need to be able to translate - have a button //change main attribute of the doc //show/hide appropriate elements-->
 
-  <nav class="jo-nav">
+  <nav class="aamr-nav" style="list-style-type:none">
     <ul>
 
-      <li class="current"><a href="#aamr_about"><span>ABOUT</span></a></li>
-      <li><a href="#aamr_services"><span>SERVICES</span></a></li>
-      <li><a href="#aamr_bio"><span>BIO</span></a></li>
+      <li class="current"><a href="#aamr_about">
+        <p><i class="fa fa-balance-scale fa-4x" aria-hidden="true"></i></p>
+        <span>ABOUT</span></a>
+        </li>
+      <li><a href="#aamr_services">
+        <p><i class="fa fa-bolt fa-4x" aria-hidden="true"></i></p>
+        <span>SERVICES</span></a>
+        </li>
+      <li><a href="#aamr_bio">
+        <p><i class="fa fa-user-circle fa-4x" aria-hidden="true"></i></p>
+        <span>BIO</span></a>
+        </li>
+      <li><a href="#aamr_contact">
+        <p><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i></p>
+        <span>CONTACT</span></a>
+        </li>
 
     </ul>
   </nav>
@@ -52,10 +63,12 @@
 
     <div id="aamr_title" class="headerSection" hidden="true">
       <img src="resources/images/logo-sm.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+    <i class="fa fa-balance-scale fa-4x" aria-hidden="true">
     </div>
     <div id="aamr_about" class="section" hidden="true"></div>
     <div id="aamr_services" class="outlineSection" hidden="true"></div>
     <div id="aamr_bio" class="section" hidden="true"></div>
+    <div id="aamr_contact" class="outlineSection" hidden="true"></div>
 
 </body>
 
