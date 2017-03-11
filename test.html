@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+  <title>Reijns-IP</title>
+  <link lang="en-us" rel="icon" type="image/x-icon" href="resources/images/logo-favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/aamr-main.css" />
+
+  <script src="plugins/jquery-3.1.1.js"></script>
+  <script src="plugins/jquery.nav.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    //jquery
+    $("#jo-nav ul").onePageNav({
+    currentClass: "current",
+        changeHash: false,
+        scrollSpeed: 300
+    });
+    
+    $("#aamr_about").load("content/aamr_over-nl.html");
+    $("#aamr_services").load("content/aamr_services-nl.html");
+    $("#aamr_bio").load("content/aamr_bio-nl.html");
+
+    
+    $("#aamr_title").fadeIn(200, function(){
+      $(".section").fadeIn(200);
+      $(".outlineSection").fadeIn(200);
+    });
+    
+});
+  </script>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--//need to be able to translate - have a button //change main attribute of the doc //show/hide appropriate elements-->
+
+  <nav class="jo-nav">
+    <ul>
+
+      <li class="current"><a href="#aamr_about"><span>ABOUT</span></a></li>
+      <li><a href="#aamr_services"><span>SERVICES</span></a></li>
+      <li><a href="#aamr_bio"><span>BIO</span></a></li>
+
+    </ul>
+  </nav>
+
+
+    <div id="aamr_title" class="headerSection" hidden="true">
+      <img src="resources/images/logo-sm.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+    </div>
+    <div id="aamr_about" class="section" hidden="true"></div>
+    <div id="aamr_services" class="outlineSection" hidden="true"></div>
+    <div id="aamr_bio" class="section" hidden="true"></div>
+
+</body>
+
+</html>

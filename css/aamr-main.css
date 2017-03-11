@@ -1,0 +1,133 @@
+.headerSection, .outlineSection, .section {
+	margin-top: 5vh;
+    margin-bottom: 5vh;
+	margin-left: 5vw;
+	margin-right: 5vw;
+
+	padding-right: 5vw;
+    padding-left: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+   	/*min-width: 80vh;*/
+	min-height: 80vh; 
+    width: 75vw;
+    /*height: 80vh;*/
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+    text-align: left;
+    border: solid 2px #666;
+}   
+
+.headerSection {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.section {
+    background-color: #555;
+    color: white;
+}
+
+.aamr_heading {
+    text-align: center;
+}
+
+/* 
+.headerSection, .section {
+    height: 90vh;
+    margin: 5vh;
+	padding: 10px;
+	min-width: 200px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: center;
+    border: solid 2px #666;
+}
+ */
+
+.aamr_ImgCss {
+    margin: 20vh auto;
+}
+
+
+.h1 {
+    font-size: 2.5em;
+}
+
+.h2 {
+    font-size: 2em;
+}
+
+.jo-nav {
+  position: fixed;
+  top: 32px;
+  left: 16px;
+  bottom: 32px;
+  width: 72px;
+  z-index: 999;
+  border-right: 0px solid #666;
+  background-color: #000;
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+}
+
+
+#jo-nav .current a {
+			background: #fff;
+			color: #000;
+		}
+		
+		.jo-nav a {
+    background-image: url(../resources/images/logo-favicon.png);
+    background-size: 105px 105px;
+}
+		
+		.jo-nav a span {
+    //display: none;
+    position: absolute;
+    top: 24px;
+    left: 68px;
+}
+
+.jo-nav a:hover {
+    //background-position: 19px 20px !important;
+    background-color: #eee;
+    width: 120px;
+}
+
+.jo-nav a {
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 105px;
+    background-position: 19px 20px;
+    background-repeat: no-repeat;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+    overflow: hidden;
+}
+		
+body:before {
+    top:0;
+}
+
+body:before, body:after {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    height: 5vh;
+    background: #fff;
+}
+
+body:after {
+    bottom: 0;
+}
