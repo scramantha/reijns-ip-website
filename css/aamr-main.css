@@ -7,7 +7,7 @@ Author: Samantha Mannino
 
 
 /* Sections */
-.headerSection, .outlineSection, .section {
+.headerSection, .outlineSection, .section, .lastSection{
 	margin-top: 5vh;
     margin-bottom: 5vh;
 	margin-left: 115px;
@@ -18,7 +18,7 @@ Author: Samantha Mannino
     padding-top: 5vh;
     padding-bottom: 5vh;
    	/*min-width: 80vh;*/
-	min-height: 80vh; 
+	height: 80vh; 
     width: 75vw;
     /*height: 80vh;*/
 	font-family: Verdana, Geneva, sans-serif;
@@ -28,8 +28,10 @@ Author: Samantha Mannino
 }   
 
 .headerSection {
-    margin-top: 10px;
+    margin-top: 5vh;
     text-align: center;
+    background-image: url(../resources/images/Keizersgracht-cropped-2.jpeg);
+    background-size: cover;
 }
 
 .section {
@@ -37,22 +39,13 @@ Author: Samantha Mannino
     color: white;
 }
 
+.lastSection {
+    margin-bottom: 4vh;
+}
+
 .aamr_heading {
     text-align: center;
 }
-
-/* 
-.headerSection, .section {
-    height: 90vh;
-    margin: 5vh;
-	padding: 10px;
-	min-width: 200px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 16px;
-	text-align: center;
-    border: solid 2px #666;
-}
- */
 
 .aamr_ImgCss {
     margin: 20vh auto;
@@ -79,12 +72,18 @@ body:before, body:after {
     left: 0;
     right: 0;
     z-index: 9000;
-    height: 5vh;
+    height: 4vh;
     background: #fff;
 }
 
 body:after {
     bottom: 0;
+}
+
+ol, ul {
+  list-style: none;
+  -webkit-padding-start: 10px;
+  color: black;
 }
 		
 /* AAMR Navigation */
@@ -112,15 +111,11 @@ body:after {
     color: #000;
 }
 		
-.aamr-nav a {
-    background-size: 105px 105px;
-}
-		
 .aamr-nav a span {
     display: none;
     position: absolute;
     top: 24px;
-    left: 68px;
+    left: 50px;
 }
 .aamr-nav a span:hover {
     display: block;
@@ -144,5 +139,6 @@ body:after {
     -webkit-transition: width 0.2s;
     transition: width 0.2s;
     overflow: hidden;
+    background-size: 105px 105px;
 }
 
