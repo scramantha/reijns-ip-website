@@ -7,7 +7,7 @@ Author: Samantha Mannino
 
 
 /* Sections */
-.headerSection, .outlineSection, .section, .lastSection{
+.headerSection, .outlineSection, .section, .lastSection {
 	margin-top: 5vh;
     margin-bottom: 5vh;
 	margin-left: 115px;
@@ -17,12 +17,13 @@ Author: Samantha Mannino
     padding-left: 5vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
-   	/*min-width: 80vh;*/
-	height: 80vh; 
-    width: 75vw;
-    /*height: 80vh;*/
-	font-family: Verdana, Geneva, sans-serif;
+
+	min-height: 80vh; 
+    overflow: hidden;
+
+    font-family: 'Karla', Verdana, sans-serif;
 	font-size: 14px;
+
     text-align: left;
     border: solid 2px #666;
 }   
@@ -80,10 +81,11 @@ body:after {
     bottom: 0;
 }
 
-ol, ul {
+ul {
+/*ol, ul, li, a {*/
   list-style: none;
   -webkit-padding-start: 10px;
-  color: black;
+  
 }
 		
 /* AAMR Navigation */
@@ -105,6 +107,17 @@ ol, ul {
     list-style-type: none;
 }
 
+.aamr-navItem:hover {
+    color: white !important;
+    background-color: black;
+    font-weight: 2;
+}
+
+.aamr-navItem {
+    color: black ;
+    text-decoration: none;
+    font-family: 'Karla', Verdana, sans-serif;
+}
 
 #aamr-nav .current a {
     background: #fff;
@@ -114,24 +127,27 @@ ol, ul {
 .aamr-nav a span {
     display: none;
     position: absolute;
-    top: 24px;
-    left: 50px;
+    /*top: 24px;
+    left: 50px;*/
 }
+
+
+
 .aamr-nav a span:hover {
     display: block;
 }
 
-.aamr-nav a:hover {
-    background-position: 19px 20px !important;
-    background-color: #eee;
-    width: 120px;
-}
+/*.aamr-nav a:hover {*/
+    /*background-position: 19px 20px !important;*/
+    /*background-color: #eee;*/
+    /*width: 120px;*/
+/*}*/
 
 .aamr-nav a {
     position: relative;
     display: block;
-    width: 105px;
-    height: 105px;
+    width: 72px;
+    /*height: 105px;*/
     background-position: 19px 20px;
     background-repeat: no-repeat;
     -moz-transition: width 0.2s;
@@ -140,5 +156,6 @@ ol, ul {
     transition: width 0.2s;
     overflow: hidden;
     background-size: 105px 105px;
+    text-align: center;
 }
 
