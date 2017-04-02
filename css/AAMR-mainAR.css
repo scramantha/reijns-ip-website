@@ -1,0 +1,189 @@
+/*
+Reijns-IP Website
+
+Author: Samantha Mannino
+11 March 2017
+*/
+
+
+/* Sections */
+.headerSection, .aboutSection, .bioSection, .servicesSection, .contactSection {
+	margin-top: 5vh;
+    margin-bottom: 5vh;
+	margin-left: 115px;
+	margin-right: 5vw;
+
+	padding-top: 5vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+
+	min-height: 80vh; 
+    overflow: hidden;
+
+    font-family: 'Karla', Verdana, sans-serif;
+	font-size: 18px;
+
+    text-align: left;
+    border: solid 2px #666;
+}   
+
+.headerSection {
+    text-align: center;
+    /*background-color: rgba(22, 0, 63, 1);
+    background-size: cover;*/
+}
+
+.aboutSection, .bioSection {
+    background-color: #666;
+    color: white;
+}
+
+.servicesSection, .contactSection, .headerSection  {
+    background-color: rgba(22, 0, 63, 1);
+    color: white;
+}
+
+/* .bioSection is same as about .aboutSection (above) */
+
+/* matches .headerSection */
+/*.contactSection {
+    background-color: rgba(22, 0, 63, 1);
+    color: white;
+}*/
+
+.aamr_heading {
+    text-align: center;
+}
+
+.aamr_ImgCss {
+    margin: 20vh auto;
+}
+
+.lawyer-img {
+    float: left;
+    padding: 0 1.5em 0.8em 0;
+    height: 10em;
+}
+
+/* Static Things */
+
+.h1 {
+    font-size: 2.5em;
+}
+
+.h2 {
+    font-size: 2em;
+}
+
+body:before {
+    top:0;
+}
+
+body:before, body:after {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    height: 4vh;
+    background: #fff;
+}
+
+body:after {
+    bottom: 0;
+}
+
+#nav-ul {
+/*ol, ul, li, a {*/
+  list-style: none;
+  -webkit-padding-start: 10px;
+}
+
+#pay-ul {
+    padding-left: 40px;
+    list-style: none;
+}
+
+/* AAMR Navigation */
+.aamr-nav {
+    position: fixed;
+    top: 32px;
+    left: 16px;
+    bottom: 32px;
+    width: 72px;
+    z-index: 999;
+    border-right: 0px solid #666;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+    list-style-type: none;
+}
+
+.aamr-navItem:hover {
+    color: white !important;
+    background-color: rgba(22, 0, 63, 1);
+    font-weight: 2;
+}
+
+.aamr-navItem {
+    color: rgba(22, 0, 63, 1) ;
+    text-decoration: none;
+    font-family: 'Karla', Verdana, sans-serif;
+}
+
+#aamr-nav .current a {
+    background: #fff;
+    color: #000;
+}
+		
+.aamr-nav a span {
+    display: none;
+    position: absolute;
+    /*top: 24px;
+    left: 50px;*/
+}
+
+.aamr-nav a span:hover {
+    display: block;
+}
+
+/*.aamr-nav a:hover {*/
+    /*background-position: 19px 20px !important;*/
+    /*background-color: #eee;*/
+    /*width: 120px;*/
+/*}*/
+
+.aamr-nav a {
+    position: relative;
+    display: block;
+    width: 72px;
+    /*height: 105px;*/
+    background-position: 19px 20px;
+    background-repeat: no-repeat;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+    overflow: hidden;
+    background-size: 105px 105px;
+    text-align: center;
+}
+
+
+/* LINKS */
+
+.aamrLink:link, .aamrLink:visited {
+    color: inherit;
+    /*text-decoration: underline;*/
+    /*display: inline-block;*/
+}
+
+
+/*a:hover, a:active {
+    background-color: red;
+}*/

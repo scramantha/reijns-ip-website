@@ -8,8 +8,8 @@
   <meta http-equiv="Expires" content="0" />
 
   <title>Reijns-IP</title>
-  <link lang="en-us" rel="icon" type="image/x-icon" href="resources/images/logo-favicon.png" />
-  <link rel="stylesheet" type="text/css" href="css/aamr-main.css" />
+  <link rel="icon" type="image/x-icon" href="resources/images/logo-favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/AAMR-mainAR.css" />
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 
   <!--Google jQuery CDN-->
@@ -65,9 +65,10 @@
       });
 
       $("#aamr_title").fadeIn(200, function () {
-        $(".section").fadeIn(200);
-        $(".outlineSection").fadeIn(200);
-        //$(".lastSection").fadeIn(200);
+        $(".aboutSection").fadeIn(200);
+        $(".servicesSection").fadeIn(200);
+        $(".bioSection").fadeIn(200);
+        $(".contactSection").fadeIn(200);
       });
 
 
@@ -79,7 +80,7 @@
   <!--//need to be able to translate - have a button //change main attribute of the doc //show/hide appropriate elements-->
 
   <nav class="aamr-nav">
-    <ul>
+    <ul id="nav-ul">
 
       <li class="current">
         <a href="#aamr_about" class="aamr-navItem">
@@ -121,14 +122,15 @@
     </ul>
   </nav>
 
-
   <div id="aamr_title" class="headerSection" hidden="true">
-    <img src="resources/images/logo-sm.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+    <p>
+    <img src="resources/images/logo-full-transparant.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+    </p>
   </div>
-  <div id="aamr_about" class="section" hidden="true"></div>
-  <div id="aamr_services" class="outlineSection" hidden="true"></div>
-  <div id="aamr_bio" class="section" hidden="true"></div>
-  <div id="aamr_contact" class="outlineSection" hidden="true"></div>
+  <div id="aamr_about" class="aboutSection" hidden="true"></div>
+  <div id="aamr_services" class="servicesSection" hidden="true"></div>
+  <div id="aamr_bio" class="bioSection" hidden="true"></div>
+  <div id="aamr_contact" class="contactSection" hidden="true"></div>
 
 </body>
 
