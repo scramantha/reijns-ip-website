@@ -2,136 +2,283 @@
 <html lang="nl">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111616252-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-111616252-1');
+  </script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+  <meta name="robots" content="index, follow">
 
   <title>Reijns-IP</title>
   <link rel="icon" type="image/x-icon" href="resources/images/logo-favicon.png" />
-  <link rel="stylesheet" type="text/css" href="css/AAMR-mainAR.css" />
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 
-  <!--Google jQuery CDN-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="plugins/jquery.nav.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/AAMR-mainAR.css" />
+
   <!--This is my own fontawesome CDN code.-->
   <script src="https://use.fontawesome.com/8e3ba72382.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      //jquery
-      $("#jo-nav ul").onePageNav({
-        currentClass: "current",
-        changeHash: false,
-        scrollSpeed: 300
-      });
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
 
-      $("#aamr_about").load("content/aamr_over-nl.html");
-      // $("#aamr_services").load("content/aamr_services-nl.html");
-      $("#aamr_bio").load("content/aamr_bio-nl.html");
-      $("#aamr_contact").load("content/aamr_contact-nl.html");
-
-
-      $("#aamr_services").load("content/aamr_services-nl.html",
-        function () {
-          // console.log($(document).width() < 500);
-          if ($(document).width() < 500) {//show thin version
-
-            // console.log('if condition');
-            // console.log($(document).width());
-
-            $("#services-wide").hide();
-            $("#services-thin").show();
-          } else { //show wide version
-
-            // console.log('else condition');
-            // console.log($(document).width());
-
-            $("#services-thin").hide();
-            $("#services-wide").show();
-          }
-        });
-
-      $(window).resize(function () {
-        // console.log($(document).width() < 500);
-        if ($(document).width() < 500) {//show thin version
-          $("#services-wide").hide();
-          $("#services-thin").show();
-        } else { //show wide version
-          $("#services-thin").hide();
-          $("#services-wide").show();
-        }
-      });
-
-      $("#aamr_title").fadeIn(200, function () {
-        $(".aboutSection").fadeIn(200);
-        $(".servicesSection").fadeIn(200);
-        $(".bioSection").fadeIn(200);
-        $(".contactSection").fadeIn(200);
-      });
-
-
-    });
-  </script>
 </head>
 
 <body>
   <!--//need to be able to translate - have a button //change main attribute of the doc //show/hide appropriate elements-->
 
-  <nav class="aamr-nav">
-    <ul id="nav-ul">
-
-      <li class="current">
-        <a href="#aamr_about" class="aamr-navItem">
-          <p><i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i>
-          </p>
-          <p>
-            Over
-          </p>
-          <span>ABOUT</span></a>
-      </li>
-      <li>
-        <a href="#aamr_services" class="aamr-navItem">
-          <p><i class="fa fa-bolt fa-3x" aria-hidden="true"></i>
-          </p>
-          <p>
-            Services
-          </p>
-          <span>SERVICES</span></a>
-      </li>
-      <li>
-        <a href="#aamr_bio" class="aamr-navItem">
-          <p><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
-          </p>
-          <p>
-            Bio
-          </p>
-          <span>BIO</span></a>
-      </li>
-      <li>
-        <a href="#aamr_contact" class="aamr-navItem">
-          <p><i class="fa fa-envelope-open-o fa-3x" aria-hidden="true"></i>
-          </p>
-          <p>
-            Contact
-          </p>
-          <span>CONTACT</span></a>
-      </li>
-
-    </ul>
+  <nav class="navbar fixed-top d-none d-sm-flex navbar-expand-sm aamr_nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-dir-col">
+        <li class="nav-item aamr-navItem">
+          <a class="nav-link" href="#about">
+            <i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i>
+            <span>Over</span>
+          </a>
+        </li>
+        <li class="nav-item aamr-navItem">
+          <a class="nav-link" href="#services">
+            <i class="fa fa-bolt fa-3x" aria-hidden="true"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="nav-item aamr-navItem">
+          <a class="nav-link" href="#bio">
+            <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+            <span>Bio</span>
+          </a>
+        </li>
+        <li class="nav-item aamr-navItem">
+          <a class="nav-link" href="#contact">
+            <i class="fa fa-envelope-open-o fa-3x" aria-hidden="true"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-  <div id="aamr_title" class="headerSection" hidden="true">
+  <div id="aamr_title" class="headerSection">
     <p>
-    <img src="resources/images/logo-full-transparant.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+      <img src="resources/images/logo-full-transparant.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
     </p>
+    <h1 hidden aria-hidden="true">Reijns-IP, Consulting & Advocatuur</h1>
   </div>
-  <div id="aamr_about" class="aboutSection" hidden="true"></div>
-  <div id="aamr_services" class="servicesSection" hidden="true"></div>
-  <div id="aamr_bio" class="bioSection" hidden="true"></div>
-  <div id="aamr_contact" class="contactSection" hidden="true"></div>
 
+
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="aboutSection">
+        <div class="col-12">
+          <h2 class="aamr_heading">Over</h2>
+          <br>
+
+          <p lang="nl">
+            Reijns IP is een Amsterdams niche kantoor, gespecialiseerd in consulting en juridische dienstverlening op het gebied van
+            IP. Denk bijvoorbeeld aan het begeleiden en vormgeven van samenwerkingen voor nieuwe producten of exploitatie
+            van uitvindingen, maar ook aan het in goede banen leiden van conflicten en minimaliseren van hun impact.
+          </p>
+          <p lang="nl">
+            Reijns IP ondersteunt creatieve en innovatieve bedrijven, zodat zij zich kunnen richten op wat zij het beste doen. Hier is
+            juridisch consulting geen showstopper, maar juist een steun waar cli&euml;nten dat nodig hebben. Goede afspraken
+            leiden tot sterke relaties en daarbij kan Reijns IP helpen. En mocht er ergens een conflict ontstaan, dan moet
+            dat niet de bedrijfsvoering of verdere ontwikkeling blokkeren. Samen bepalen wij dan de juiste strategie zodat
+            u snel weer door kunt met wat voor u belangrijk is.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="services" class="container-fluid">
+    <div class="row">
+      <div class="servicesSection">
+        <!-- <div class="col-12"> -->
+        <h2 class="aamr_heading">Services</h2>
+        <br>
+        <p lang="nl">
+          IP heeft vele kanten en ieder bedrijf vertrouwt en bouwt voor een groot deel op zijn technologie, merken en/of handelsnaam.
+          Afbakening is normaal en een brief van een concurrent die je wil aanspreken is echt niet altijd een probleem. Belangrijk
+          is een goed oog voor de detail en iemand die het leuk vindt om in de complexiteit te duiken en samen creatieve
+          oplossingen te verzinnen.
+        </p>
+        <br>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <h3>Start-ups</h3>
+          </div>
+          <div class="col-12 col-md-9">
+            De beginfase van een bedrijf is kwetsbaar. Daarom is het belangrijk om een partner te hebben die niet alleen weet of en hoe
+            een product beschermd kan worden, maar die ook begrijpt hoe de productieketen in elkaar zit en (o.a. R&D-) samenwerkingen
+            heeft opgezet.
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <h3>(Bio) Tech</h3>
+          </div>
+          <div class="col-12 col-md-9">
+            Innovatieve (bio)tech staat vol in de schijnwerpers en de gevestigde spelers houden nieuwe toetreders goed in de gaten. Een
+            advocaat die de afspraken rond know-how kan dichttimmeren en heeft gezien hoe grote partijen toetreders proberen
+            klem te zetten kan op de lange termijn veel geld en problemen besparen.
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <h3>Losse vragen</h3>
+          </div>
+          <div class="col-12 col-md-9">
+            Natuurlijk zijn er duizend en &eacute;&eacute;n redenen om juridisch advies in te winnen. Stuur gewoon een mailtje en als
+            ik het niet weet, kan ik je vast de juiste richting wijzen. Ori&euml;nterende gesprekken zijn altijd gratis.
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div id="bio" class="container-fluid">
+    <div class="row">
+      <div class="bioSection">
+        <div class="col-12">
+          <h2 class="aamr_heading">Bio</h2>
+          <br>
+          <img class="lawyer-img" src=resources/images/bio-pic-trap.jpg alt="Arjan Reijns [foto]">
+
+          <p>
+            <b>
+              Arjan Reijns
+            </b>
+          </p>
+          <p>
+            Ik ben mijn kantoor begonnen omdat ik graag wil samenwerken met kleine en groeiende bedrijven met visie. Met mensen die behoefte
+            hebben aan een advocaat met zicht op de business en niet alleen een risicoadviseur. Ik zag dat hun behoefte vaak
+            moeilijk past in het model van de klassieke juridische dienstverlening en men het dus vaak maar moeten doen met
+            wat de advocatuur biedt.
+          </p>
+          <p>
+            Als advocaat, gespecialiseerd in intellectuele eigendom, deed ik al pro bono werk voor kleine innovatieve bedrijven en dat
+            is gegroeid naar een praktijk met zowel individuele uitvinders &#8208; werkend vanuit hun eigen schuur &#8208;
+            als grote maakindustrie en alles daar tussenin; innovatieve mensen met visie voor apps, medical devices, biotech,
+            industri&euml;le ontwerpen en voor vele andere industrie&euml;n. Voor hen heb ik onder meer schetsen helpen groeien
+            tot prototype of productie, R&D-samenwerkingen opgezet, IP beschermd, licenties vormgegeven, contracten onderhandeld,
+            rechtszaken gevoerd of omgezet in schikking of zelfs in samenwerking.
+          </p>
+          <p>
+            Ik merkte dat ik het leuker vond om te bouwen met innovatieve bedrijven dan het voeren van lange procedures voor grote farmaceuten.
+            Daarom ben ik fulltime een internationale MBA gaan doen ter voorbereiding op een meer commerci&euml;le insteek.
+            Ik heb mij onder meer verdiept in startups, competitive- & operations strategy en decision analysis. Reijns IP
+            bouwt hierop voort. Praktisch vult het een lacune in de markt &#8208; de consultant/advocaat &#8208; maar belangrijker:
+            het is doen wat ik leuk vind. Ik ben liever samen met een cli&euml;nt een complex probleem aan het oplossen dan
+            dat ik achter m&prime;n bureau eindeloze risicomemo&prime;s schrijf.
+          </p>
+          <p>
+            Wie wil kan mijn CV
+            <a href="https://nl.linkedin.com/in/arjan-reijns-llm-mba-0aa9521" target="blank" class="aamrLink">hier</a>
+            bekijken. Ik woon in Amsterdam en ben lid van verschillende beroepsverenigingen als de AIPPI, altijd in voor een kennismaking,
+            taalcoach voor vluchtelingen en fervent sporter. Ik ben ook altijd te porren voor een uitdaging; het roeien van
+            de Ringvaart Regatta met mijn broer is de volgende op het programma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="contact" class="container-fluid">
+    <div class="row">
+      <div class="contactSection">
+        <div class="col-12">
+          <h2 class="aamr_heading">Contact & Info</h2>
+          <br />
+          <h3>Contact</h3>
+          <table>
+            <tr>
+              <td style="width: 130px">e-mail</td>
+              <td>
+                <a href="mailto:arjan.reijns@reijns-ip.com" target="_top" class="aamrLink">
+                  arjan.reijns @ reijns-ip.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td>tel</td>
+              <td>+31 (6) 184 333 13</td>
+            </tr>
+            <tr>
+              <td>kantooradres</td>
+              <td>Noorderstraat 23-III</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1017 TR&nbsp;&nbsp;Amsterdam</td>
+            </tr>
+          </table>
+          <br />
+          <br />
+
+          <h3>Transparantie</h3>
+          <p>
+            De algemene voorwaarden van Reijns IP vind je
+            <a href="content/links/alg-vw-20170317.pdf" target="_blank" class="aamrLink">hier</a>.
+          </p>
+          <p>
+            De tariefregeling vind je
+            <a href="content/links/Tarieven-2017.02.20.pdf" target="_blank" class="aamrLink">hier</a>.
+          </p>
+          <p>
+            De kantoorklachtenregeling vind je
+            <a href="content/links/NL-klachtenregeling-2017.02.20.pdf" target="_blank" class="aamrLink">hier</a>.
+          </p>
+          <br />
+          <br />
+          <h3>Bedrijfsinformatie</h3>
+
+          <p>
+            Reijns IP is ingeschreven bij de KvK te Amsterdam onder nummer: 67802702
+          </p>
+          <p>
+            Het btw-nummer van Reijns IP is NL174816601B01
+          </p>
+          <p>
+            De betalingsgegevens van Reijns IP zijn:
+
+            <ul id="pay-ul">
+              <li>A.A.M. Reijns te Amsterdam </li>
+              <li>IBAN: NL70INGB0007713364</li>
+              <li>BIC (SWIFT): NLINGB2A</li>
+            </ul>
+          </p>
+          <p>
+            Overeenkomstig de eisen van de Nederlandse Orde van Advocaten, heeft Reijns IP heeft een beroepsaansprakelijkheidsverzekering
+            afgesloten bij Koekenberg Van Vuuren in Utrecht.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

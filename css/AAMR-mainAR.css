@@ -1,8 +1,8 @@
 /*
 Reijns-IP Website
 
-Author: Samantha Mannino
-11 March 2017
+Author: Samantha Mannino, Arjan Reijns
+27 December 2017
 */
 
 
@@ -10,23 +10,37 @@ Author: Samantha Mannino
 .headerSection, .aboutSection, .bioSection, .servicesSection, .contactSection {
 	margin-top: 5vh;
     margin-bottom: 5vh;
-	margin-left: 115px;
-	margin-right: 5vw;
+    margin-left: 5vh;
+	margin-right: 5vh;
 
 	padding-top: 5vh;
     padding-right: 5vw;
     padding-left: 5vw;
     padding-bottom: 5vh;
 
-	min-height: 80vh; 
+	min-height: 90vh; 
     overflow: hidden;
 
     font-family: 'Karla', Verdana, sans-serif;
 	font-size: 18px;
 
     text-align: left;
-    border: solid 2px #666;
+    /* border: solid 2px #666; */
+    border-radius: 15px;
 }   
+
+@media (min-width: 576px) {
+
+    .headerSection, 
+    .aboutSection, 
+    .bioSection, 
+    .servicesSection, 
+    .contactSection,
+    .titleSection {
+        margin-left: 115px;
+    }
+
+ }
 
 .headerSection {
     text-align: center;
@@ -44,14 +58,6 @@ Author: Samantha Mannino
     color: white;
 }
 
-/* .bioSection is same as about .aboutSection (above) */
-
-/* matches .headerSection */
-/*.contactSection {
-    background-color: rgba(22, 0, 63, 1);
-    color: white;
-}*/
-
 .aamr_heading {
     text-align: center;
 }
@@ -61,18 +67,35 @@ Author: Samantha Mannino
 }
 
 .lawyer-img {
-    float: left;
-    padding: 0 1.5em 0.8em 0;
-    height: 10em;
+    
+    
+        float: left;
+        margin: 3em 1.5em 0.8em 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+@media (min-width: 576px) {
+    
+    .lawyer-img {
+        height: 250px;
+        width: auto;
+    }
+    
 }
+
+
+
+
+
 
 /* Static Things */
 
-.h1 {
+h1 {
     font-size: 2.5em;
 }
 
-.h2 {
+h2 {
     font-size: 2em;
 }
 
@@ -106,63 +129,37 @@ body:after {
 }
 
 /* AAMR Navigation */
-.aamr-nav {
-    position: fixed;
-    top: 32px;
-    left: 16px;
-    bottom: 32px;
-    width: 72px;
-    z-index: 999;
-    border-right: 0px solid #666;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    display: block;
-    list-style-type: none;
+.aamr_nav {
+    max-width: 100px;
+    margin-top: 5vh;
 }
 
-.aamr-navItem:hover {
+.aamr-navItem a:hover {
     color: white !important;
     background-color: rgba(22, 0, 63, 1);
     font-weight: 2;
+    border-radius: 10px;
 }
 
-.aamr-navItem {
+.aamr-navItem a {
     color: rgba(22, 0, 63, 1) ;
     text-decoration: none;
     font-family: 'Karla', Verdana, sans-serif;
+    text-align: center;
 }
 
-#aamr-nav .current a {
-    background: #fff;
-    color: #000;
+.aamr-navItem span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-		
-.aamr-nav a span {
-    display: none;
-    position: absolute;
-    /*top: 24px;
-    left: 50px;*/
-}
-
-.aamr-nav a span:hover {
-    display: block;
-}
-
-/*.aamr-nav a:hover {*/
-    /*background-position: 19px 20px !important;*/
-    /*background-color: #eee;*/
-    /*width: 120px;*/
-/*}*/
 
 .aamr-nav a {
     position: relative;
     display: block;
     width: 72px;
-    /*height: 105px;*/
+    height: 105px;
     background-position: 19px 20px;
     background-repeat: no-repeat;
     -moz-transition: width 0.2s;
@@ -183,7 +180,8 @@ body:after {
     /*display: inline-block;*/
 }
 
+/* Util */
 
-/*a:hover, a:active {
-    background-color: red;
-}*/
+.flex-dir-col {
+    flex-direction: column !important;
+}
