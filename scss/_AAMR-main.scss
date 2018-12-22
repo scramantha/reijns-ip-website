@@ -2,13 +2,11 @@
 Reijns-IP Website
 
 Author: Samantha Mannino, Arjan Reijns
-27 December 2017
+December 2018
 */
 
 $playing-with-margin: 100px;
 $aamr-blue: rgba(22, 0, 63, 1);
-// $aamr-blue: $purple-2;
-// $aamr-gray: #666;
 $aamr-gray: #777;
 $aamr-red: $red-5;
 
@@ -134,24 +132,6 @@ h1 {
 h2 {
     font-size: 2em;
 }
-
-// body:before {
-//     top:0;
-// }
-
-// body:before, body:after {
-//     content: '';
-//     position: fixed;
-//     left: 0;
-//     right: 0;
-//     z-index: 9000;
-//     height: 4vh;
-//     background: #fff;
-// }
-
-// body:after {
-//     bottom: 0;
-// }
 
 body {
     background-color: $aamr-blue;
