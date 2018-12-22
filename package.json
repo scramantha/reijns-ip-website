@@ -1,0 +1,27 @@
+{
+  "name": "reijns-ip-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss css/main.css",
+    "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm run css-compile\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scramantha/reijns-ip-website.git"
+  },
+  "author": "Samantha Mannino <samantha.mannino@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scramantha/reijns-ip-website/issues"
+  },
+  "homepage": "https://github.com/scramantha/reijns-ip-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  }
+}

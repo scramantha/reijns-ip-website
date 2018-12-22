@@ -1,0 +1,105 @@
+// My variables
+@import "variables";
+
+@import "AAMR-main";
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// overwrite bootstrap vars
+@import "theme-variables";
+
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+// @import "../node_modules/bootstrap/scss/card";
+
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/transitions";
+
+// UTILITIES
+@import "../node_modules/bootstrap/scss/utilities/align";
+// @import "../node_modules/bootstrap/scss/utilities/background";
+@import "../node_modules/bootstrap/scss/utilities/borders";
+// @import "../node_modules/bootstrap/scss/utilities/clearfix";
+@import "../node_modules/bootstrap/scss/utilities/display";
+@import "../node_modules/bootstrap/scss/utilities/embed";
+@import "../node_modules/bootstrap/scss/utilities/flex";
+@import "../node_modules/bootstrap/scss/utilities/float";
+@import "../node_modules/bootstrap/scss/utilities/position";
+@import "../node_modules/bootstrap/scss/utilities/screenreaders";
+@import "../node_modules/bootstrap/scss/utilities/shadows";
+@import "../node_modules/bootstrap/scss/utilities/sizing";
+@import "../node_modules/bootstrap/scss/utilities/spacing";
+@import "../node_modules/bootstrap/scss/utilities/text";
+@import "../node_modules/bootstrap/scss/utilities/visibility";
+
+// My classes
+// @import "skeleton";
+
+
+.purple-darkblue-gradient-diagonal {
+    background: linear-gradient(135deg, rgb(142, 16, 245) 0%,rgb(142, 16, 245) 30%,rgba(19,126,245,1) 100%);
+    color: white;  
+    background: linear-gradient(135deg,  rgb(142, 16, 245) 0%, rgb(142, 16, 245) 30%, $blue-5 100%);
+    color: white;  
+}
+
+.blue-yellow-gradient-diagonal {
+    background: linear-gradient(135deg, $blue-4 0%,rgba(19,126,245,1) 30%, $yellow-0 100%);
+    color: white;  
+}
+
+.red-blue-gradient-diagonal {
+    background: linear-gradient(135deg, $red-0 0%,$blue-4 30%, $blue-4 100%);
+    color: white;  
+}
+
+.blue-red-gradient-diagonal {
+    background: linear-gradient(135deg, $blue-4 0%,rgba(19,126,245,1) 30%, $red-0 100%);
+    color: white; 
+}
+
+.blue-darkblue-gradient-diagonal {
+    background: linear-gradient(135deg, $blue-4 0%,rgba(19,126,245,1) 30%, $blue-5 100%);
+    color: white; 
+}
+
+
+.white-bg {
+    background-color: #fff;
+    color: $main-black;
+}
+
+
+.row {
+    &--gray {
+        background-color: $aamr-gray;
+    }
+    &--blue {
+        background-color: $aamr-blue;
+    }
+    &--red {
+        background-color: $aamr-red;
+    }
+}
+
+.gradient-blue-to-red-us {
+    background: linear-gradient(180deg, $aamr-blue 0%, $aamr-red 100%);
+}
+
+.gradient-red-to-blue-us {
+    background: linear-gradient(180deg, $aamr-red 0%, $aamr-blue 100%);
+}
+
+.gradient-spacer {
+    height: 250px;
+}
+
