@@ -1,10 +1,10 @@
 {
   "name": "reijns-ip-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss css/main.css",
+    "css-compile": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss css/main.css",
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm run css-compile\""
   },
   "repository": {
