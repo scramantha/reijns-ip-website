@@ -44,55 +44,50 @@
 </head>
 
 <body>
-  <!--//need to be able to translate - have a button //change main attribute of the doc //show/hide appropriate elements-->
-
-  <nav class="navbar fixed-top d-none d-sm-flex navbar-expand-sm aamr_nav">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav flex-dir-col">
-        <li class="nav-item aamr-navItem">
-          <a class="nav-link" href="#about">
-            <i class="fa fa-balance-scale fa-3x d-sm-block" aria-hidden="true"></i>
-            <span>Over</span>
-          </a>
-        </li>
-        <li class="nav-item aamr-navItem">
-          <a class="nav-link" href="#services">
-            <i class="fa fa-bolt fa-3x d-sm-block" aria-hidden="true"></i>
-            <span>Services</span>
-          </a>
-        </li>
-        <li class="nav-item aamr-navItem">
-          <a class="nav-link" href="#bio">
-            <i class="fa fa-user-circle fa-3x d-sm-block" aria-hidden="true"></i>
-            <span>Bio</span>
-          </a>
-        </li>
-        <li class="nav-item aamr-navItem">
-          <a class="nav-link" href="#contact">
-            <i class="fa fa-envelope-open-o fa-3x d-sm-block" aria-hidden="true"></i>
-            <span>Contact</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <nav class="navbar fixed-top d-none d-sm-flex aamr_nav"  id="navbarNav">
+    <ul class="nav nav-pills flex-dir-col">
+      <li class="nav-item aamr-navItem">
+        <a class="nav-link" href="#about">
+          <i class="fa fa-balance-scale fa-3x d-sm-block"></i>
+          <span>Over</span>
+        </a>
+      </li>
+      <li class="nav-item aamr-navItem">
+        <a class="nav-link" href="#services">
+          <i class="fa fa-bolt fa-3x d-sm-block"></i>
+          <span>Services</span>
+        </a>
+      </li>
+      <li class="nav-item aamr-navItem">
+        <a class="nav-link" href="#bio">
+          <i class="fa fa-user-circle fa-3x d-sm-block"></i>
+          <span>Bio</span>
+        </a>
+      </li>
+      <li class="nav-item aamr-navItem">
+        <a class="nav-link" href="#contact">
+          <i class="fa fa-envelope-open-o fa-3x d-sm-block"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
   </nav>
-  <div id="aamr_title" class="container-fluid">
-    <div class="row row--blue row--start">
+  <div class="container-fluid scroll-box" data-spy="scroll" data-target="#navbarNav">
+    <div class="row row--blue row--start" >
       <div class="section headerSection">
-        <p>
-          <img src="resources/images/logo-full-transparant.png" class="aamr_ImgCss" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
-        </p>
-        <h1 hidden aria-hidden="true">Reijns-IP, Consulting & Advocatuur</h1>
+        <div class="headerContent">
+          <img src="resources/images/logo-favicon.png" style="max-width:100%;margin-bottom:50px;" alt="Reijns-IP, Consulting & Advocatuur (Logo)">
+          <h1>Reijns IP</h1>
+          <p class="h4">Consulting & Advocatuur</p>
+        </div>
       </div>
-    </div> 
-  </div>
-  <div class="gradient-spacer gradient-blue-to-red-us"></div>
+    </div>
 
+    <div class="row gradient-spacer gradient-blue-to-red-us"></div>
 
-  <div id="about" class="container-fluid">
     <div class="row row--red">
       <div class="section aboutSection">
-        <div class="col-12">
+        <div class="" id="about">
           <h2 class="aamr_heading">Over</h2>
           <br>
 
@@ -111,14 +106,12 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="gradient-spacer gradient-red-to-blue-us"></div>
 
+    <div class="row gradient-spacer gradient-red-to-blue-us"></div>
 
-  <div id="services" class="container-fluid">
     <div class="row row--blue">
       <div class="section servicesSection">
-        <!-- <div class="col-12"> -->
+        <div class="" id="services">
         <h2 class="aamr_heading">Services</h2>
         <br>
         <p lang="nl">
@@ -129,10 +122,10 @@
         </p>
         <br>
         <div class="row">
-          <div class="col-12 col-md-3">
+          <div class=" col-md-3">
             <h3>Start-ups</h3>
           </div>
-          <div class="col-12 col-md-9">
+          <div class=" col-md-9">
             De beginfase van een bedrijf is kwetsbaar. Daarom is het belangrijk om een partner te hebben die niet alleen weet of en hoe
             een product beschermd kan worden, maar die ook begrijpt hoe de productieketen in elkaar zit en (o.a. R&D-) samenwerkingen
             heeft opgezet.
@@ -140,10 +133,10 @@
         </div>
         <br>
         <div class="row">
-          <div class="col-12 col-md-3">
+          <div class=" col-md-3">
             <h3>(Bio) Tech</h3>
           </div>
-          <div class="col-12 col-md-9">
+          <div class=" col-md-9">
             Innovatieve (bio)tech staat vol in de schijnwerpers en de gevestigde spelers houden nieuwe toetreders goed in de gaten. Een
             advocaat die de afspraken rond know-how kan dichttimmeren en heeft gezien hoe grote partijen toetreders proberen
             klem te zetten kan op de lange termijn veel geld en problemen besparen.
@@ -151,33 +144,28 @@
         </div>
         <br>
         <div class="row">
-          <div class="col-12 col-md-3">
+          <div class=" col-md-3">
             <h3>Losse vragen</h3>
           </div>
-          <div class="col-12 col-md-9">
+          <div class=" col-md-9">
             Natuurlijk zijn er duizend en &eacute;&eacute;n redenen om juridisch advies in te winnen. Stuur gewoon een mailtje en als
             ik het niet weet, kan ik je vast de juiste richting wijzen. Ori&euml;nterende gesprekken zijn altijd gratis.
           </div>
         </div>
-        <!-- </div> -->
+        </div>
       </div>
     </div>
-  </div>
-  <div class="gradient-spacer gradient-blue-to-red-us"></div>
 
-  <div id="bio" class="container-fluid">
+    <div class="row gradient-spacer gradient-blue-to-red-us"></div>
+
     <div class="row row--red">
       <div class="section bioSection">
-        <div class="col-12">
+        <div class="" id="bio">
           <h2 class="aamr_heading">Bio</h2>
           <br>
-          <img class="lawyer-img" src=resources/images/bio-pic-trap.jpg alt="Arjan Reijns [foto]">
 
-          <p>
-            <b>
-              Arjan Reijns
-            </b>
-          </p>
+          <h3>Arjan Reijns</h3>
+          <img class="lawyer-img" src=resources/images/bio-pic-trap.jpg alt="Arjan Reijns">
           <p>
             Ik ben mijn kantoor begonnen omdat ik graag wil samenwerken met kleine en groeiende bedrijven met visie. Met mensen die behoefte
             hebben aan een advocaat met zicht op de business en niet alleen een risicoadviseur. Ik zag dat hun behoefte vaak
@@ -210,15 +198,12 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="gradient-spacer gradient-red-to-blue-us"></div>
+    <div class="row gradient-spacer gradient-red-to-blue-us"></div>
 
-
-  <div id="contact" class="container-fluid">
     <div class="row row--blue row--end">
       <div class="section contactSection">
-        <div class="col-12">
+        <div class="" id="contact">
           <h2 class="aamr_heading">Contact & Info</h2>
           <br />
           <h3>Contact</h3>
@@ -264,18 +249,18 @@
           <h3>Bedrijfsinformatie</h3>
 
           <p>
-            Reijns IP is ingeschreven bij de KvK te Amsterdam onder nummer: 67802702
+            Reijns IP is ingeschreven bij de KvK te Amsterdam onder nummer: <samp>67802702</samp>
           </p>
           <p>
-            Het btw-nummer van Reijns IP is NL174816601B01
+            Het btw-nummer van Reijns IP is <samp>NL174816601B01</samp>
           </p>
           <p>
             De betalingsgegevens van Reijns IP zijn:
 
             <ul id="pay-ul">
               <li>A.A.M. Reijns te Amsterdam </li>
-              <li>IBAN: NL70INGB0007713364</li>
-              <li>BIC (SWIFT): NLINGB2A</li>
+              <li>IBAN: <samp>NL70INGB0007713364</samp></li>
+              <li>BIC (SWIFT): <samp>NLINGB2A</samp></li>
             </ul>
           </p>
           <p>

@@ -1,7 +1,7 @@
 // My variables
 @import "variables";
 
-@import "AAMR-main";
+
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -10,6 +10,7 @@
 // overwrite bootstrap vars
 @import "theme-variables";
 
+@import "AAMR-main";
 
 // Optional
 @import "../node_modules/bootstrap/scss/reboot";
@@ -103,3 +104,9 @@
     height: 250px;
 }
 
+.scroll-box {
+scroll-behavior: smooth;
+position: relative;
+overflow: auto;
+height: 100vh;
+}

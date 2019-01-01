@@ -83,6 +83,34 @@ $body-color:                $main-black;
 $grid-columns:                12;
 $grid-gutter-width:           32px;
 
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+// $line-height-lg:              1.5 !default;
+// $line-height-sm:              1.5 !default;
+
+// $border-width:                1px !default;
+// $border-color:                $gray-300 !default;
+
+$border-radius:               1rem;
+// $border-radius-lg:            .3rem !default;
+// $border-radius-sm:            .2rem !default;
+
+// $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+// $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+// $component-active-color:      $white !default;
+// $component-active-bg:         theme-color("primary") !default;
+
+// $caret-width:                 .3em !default;
+
+// $transition-base:             all .2s ease-in-out !default;
+// $transition-fade:             opacity .15s linear !default;
+// $transition-collapse:         height .35s ease !default;
+
+
 
 // Fonts
 //
@@ -105,16 +133,16 @@ $font-family-base:            $font-family-sans-serif;
 $font-weight-base:            $font-weight-light !default;
 // $line-height-base:            1.5 !default;
 
-// $h1-font-size:                $font-size-base * 2.5 !default;
-// $h2-font-size:                $font-size-base * 2 !default;
-// $h3-font-size:                $font-size-base * 1.75 !default;
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.5;
+$h3-font-size:                $font-size-base * 2;
 // $h4-font-size:                $font-size-base * 1.5 !default;
 // $h5-font-size:                $font-size-base * 1.25 !default;
 // $h6-font-size:                $font-size-base !default;
 
 // $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        $font-family-sans-serif;
-// $headings-font-weight:        700 !default;
+$headings-font-family:        $font-family-serif;
+$headings-font-weight:        700;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              inherit !default;
 
@@ -154,3 +182,26 @@ $headings-font-family:        $font-family-sans-serif;
 // $mark-bg:                     #fcf8e3 !default;
 
 // $hr-margin-y:                 $spacer !default;
+
+
+
+// Navs
+
+// $nav-link-padding-y:                .5rem !default;
+// $nav-link-padding-x:                1rem !default;
+// $nav-link-disabled-color:           $gray-600 !default;
+
+// $nav-tabs-border-color:             $gray-300 !default;
+// $nav-tabs-border-width:             $border-width !default;
+// $nav-tabs-border-radius:            $border-radius !default;
+// $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+// $nav-tabs-link-active-color:        $gray-700 !default;
+// $nav-tabs-link-active-bg:           $body-bg !default;
+// $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+$nav-pills-border-radius:           $border-radius;
+$nav-pills-link-active-color:       $aamr-blue;
+$nav-pills-link-active-bg:          white;
+
+// $nav-divider-color:                 $gray-200 !default;
+// $nav-divider-margin-y:              ($spacer / 2) !default;
